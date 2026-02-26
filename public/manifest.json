@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "ChromeEx ContextMenu for NotebookLM",
+  "short_name": "ContextMenu for NLM",
+  "version": "0.9.0.0",
+  "description": "Add ContextMenu for NotebookLM",
+  "action": {
+    "default_title": "Open Setting"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://notebooklm.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
